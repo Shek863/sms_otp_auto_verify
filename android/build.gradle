@@ -34,6 +34,9 @@ android {
         minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
     lintOptions {
         disable 'InvalidPackage'
     }
