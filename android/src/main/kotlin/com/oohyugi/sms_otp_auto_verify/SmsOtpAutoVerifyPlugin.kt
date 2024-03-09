@@ -89,9 +89,9 @@ class SmsOtpAutoVerifyPlugin : FlutterPlugin, MethodCallHandler,
 
             }
             "startListening" -> {
-                this.pendingResult = result
-                receiver = SmsBroadcastReceiver()
-                startListening()
+                //this.pendingResult = result
+                //receiver = SmsBroadcastReceiver()
+                //startListening()
 
             }
             "stopListening" -> {
