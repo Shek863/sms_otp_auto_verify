@@ -82,10 +82,10 @@ class SmsOtpAutoVerifyPlugin : FlutterPlugin, MethodCallHandler,
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         when (call.method) {
             "getAppSignature" -> {
-                activity?.let {
-                    val signature = AppSignatureHelper(it).getAppSignatures()[0]
-                    result.success(signature)
-                }
+               // activity?.let {
+                 //   val signature = AppSignatureHelper(it).getAppSignatures()[0]
+                   // result.success(signature)
+                //}
 
             }
             "startListening" -> {
@@ -95,13 +95,13 @@ class SmsOtpAutoVerifyPlugin : FlutterPlugin, MethodCallHandler,
 
             }
             "stopListening" -> {
-                pendingResult = null
-                unregister()
+               // pendingResult = null
+                //unregister()
             }
 
             "requestPhoneHint" -> {
-                this.pendingResult = result
-                requestHint()
+               // this.pendingResult = result
+                //requestHint()
 
             }
 
